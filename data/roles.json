@@ -1,0 +1,339 @@
+{
+    "script_name": "UNSW: No one Fail",
+    "author": "Thur",
+    "roles": [
+      {
+        "name": "Hurdle幽灵",
+        "faction": "demon",
+        "ability": "每晚选择两个人进入摆烂状态，其中一个人在次日夜晚挂科。",
+        "effect_notes": "摆烂：当玩家进入摆烂状态，技能失效/所获得的信息为错误信息。",
+        "first_night_order": "抄袭雷达",
+        "other_night_order": "抄袭雷达",
+        "tags": ["control", "debuff", "kill", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Final吞噬者",
+        "faction": "demon",
+        "ability": "可发动技能使随机一位玩家的所获得的信息崩溃，可能会推翻之前此玩家所获得的信息，每局仅限一次。每晚可不选择玩家挂科一次，但在次日必须选择三个玩家挂科。",
+        "effect_notes": "挂科：等同于玩家死亡。",
+        "first_night_order": "组会鸽王",
+        "other_night_order": "火警空响",
+        "tags": ["kill", "chaos", "misinfo", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "三学期暴君",
+        "faction": "demon",
+        "ability": "只要本角色存活，玩家组会时长每过一晚会被压缩三分钟。每晚杀一人。",
+        "effect_notes": "技能带*为非第一晚技能。",
+        "first_night_order": "火警空响",
+        "other_night_order": "选课助手",
+        "tags": ["kill", "time-control", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Deadline降临者",
+        "faction": "demon",
+        "ability": "晚上可以发动技能使 deadline 提前，次日白天组会时长缩短至仅有一分钟，每局仅限一次。每晚使一人挂科，若白天没人被审判，则当晚可多挂科一人。",
+        "effect_notes": "组会为白天玩家公聊时间；若被技能影响时间缩短，将在时间结束时强制进入审判环节。",
+        "first_night_order": "学术警告",
+        "other_night_order": "Help Session",
+        "tags": ["kill", "time-control", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+  
+      {
+        "name": "火警空响",
+        "faction": "minion",
+        "ability": "每晚选择一个玩家，使其白天所受到的审判失败。",
+        "effect_notes": "PASS：玩家存活。",
+        "first_night_order": "Hurdle幽灵",
+        "other_night_order": "情绪感染者",
+        "tags": ["vote-control", "trial-control", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "老师罢工",
+        "faction": "minion",
+        "ability": "晚上可使所有玩家进入摆烂状态，每局仅限一次。当技能使用后，若场上玩家大于等于五人时，恶魔被审判出局，则自动成为新的恶魔，继承恶魔所有未使用技能。",
+        "effect_notes": "每局正常公聊时间为10-15分钟。",
+        "first_night_order": "群聊视奸者",
+        "other_night_order": "Hurdle幽灵",
+        "tags": ["mass-debuff", "succession", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "学术警告",
+        "faction": "minion",
+        "ability": "每晚可选择一名玩家和角色，被选中的玩家将被告知，并在次日白天需要疯狂证明自己是那个角色，否则当晚可能会直接挂科。",
+        "effect_notes": "",
+        "first_night_order": "早八抢课人",
+        "other_night_order": "Final吞噬者",
+        "tags": ["bluff", "pressure", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "挂科乌龙",
+        "faction": "minion",
+        "ability": "晚上选择一名玩家，使其白天无法发言或提名，每局仅限一次。",
+        "effect_notes": "",
+        "first_night_order": "Lecture回放",
+        "other_night_order": "三学期暴君",
+        "tags": ["silence", "nomination-control", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "组会鸽王",
+        "faction": "minion",
+        "ability": "每晚选择一名玩家，从当夜到第二天黄昏该玩家都将处于摆烂状态。你知道本场外来者的角色。外来者-1/+1。",
+        "effect_notes": "",
+        "first_night_order": "Campus迷路者",
+        "other_night_order": "Deadline降临者",
+        "tags": ["debuff", "outsider-mod", "info", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "背刺者",
+        "faction": "minion",
+        "ability": "你将被视为善良阵营。晚上有无视防御的使人挂科能力，每局仅限一次。",
+        "effect_notes": "",
+        "first_night_order": "背刺者",
+        "other_night_order": "",
+        "tags": ["alignment-trick", "kill", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+  
+      {
+        "name": "摸鱼队友",
+        "faction": "outsider",
+        "ability": "你以为自己是镇民，每天晚上你所获的信息可能是错误的。如果你发起提名，你可能会直接被挂科。",
+        "effect_notes": "",
+        "first_night_order": "组会鸽王",
+        "other_night_order": "",
+        "tags": ["misinfo", "penalty", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "社恐分子",
+        "faction": "outsider",
+        "ability": "你无法在白天发言和提名，每晚可以问说书人一个回答为是/否的问题。整场游戏白天仅限发言一句话。",
+        "effect_notes": "",
+        "first_night_order": "学术警告",
+        "other_night_order": "",
+        "tags": ["restricted-speech", "question", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "戏精分子",
+        "faction": "outsider",
+        "ability": "全局游戏只能通过肢体语言、表情，发言只能使用比喻句和疑问句。首日和当有其他人也被提名时无法被挂科。",
+        "effect_notes": "",
+        "first_night_order": "老师罢工",
+        "other_night_order": "",
+        "tags": ["speech-restriction", "survival", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "选课掉坑王",
+        "faction": "outsider",
+        "ability": "你以为你是恶魔，其实你不是。你每晚作出的选择都会被真正的恶魔知道。",
+        "effect_notes": "",
+        "first_night_order": "挂科乌龙",
+        "other_night_order": "",
+        "tags": ["false-identity", "info-leak", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Campus迷路者",
+        "faction": "outsider",
+        "ability": "每晚你可能看到不该看到的技能和效果，你所看到的有可能是真的，但你不知道这个技能和效果是谁发动的。",
+        "effect_notes": "",
+        "first_night_order": "社恐分子",
+        "other_night_order": "",
+        "tags": ["chaotic-info", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+  
+      {
+        "name": "群聊视奸者",
+        "faction": "townsfolk",
+        "ability": "首晚你将被告知两个玩家及一个镇民角色，其中一个玩家是被告知的角色。",
+        "effect_notes": "",
+        "first_night_order": "Moodle爬虫",
+        "other_night_order": "",
+        "tags": ["info", "first-night", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "早八抢课人",
+        "faction": "townsfolk",
+        "ability": "首夜你可以选择一个玩家，你将知道其属于哪个阵营。",
+        "effect_notes": "",
+        "first_night_order": "Campus迷路者",
+        "other_night_order": "",
+        "tags": ["info", "alignment-check", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Lecture回放",
+        "faction": "townsfolk",
+        "ability": "每晚你将得知你所选中的两个玩家是否在夜晚被唤醒。",
+        "effect_notes": "",
+        "first_night_order": "Lecture回放",
+        "other_night_order": "",
+        "tags": ["info", "night-activity", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "抄袭雷达",
+        "faction": "townsfolk",
+        "ability": "每晚你将得知你所选中的两个玩家是否属于同一阵营，并将可能让其中一人摆烂。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["info", "alignment-check", "debuff", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "选课助手",
+        "faction": "townsfolk",
+        "ability": "每晚选择一名玩家，如果该玩家是邪恶阵营，则当晚其进入摆烂状态，并且对方将知道你的角色。",
+        "effect_notes": "",
+        "first_night_order": "Moodle爬虫",
+        "other_night_order": "",
+        "tags": ["debuff", "evil-check", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Moodle爬虫",
+        "faction": "townsfolk",
+        "ability": "每晚你将得知昨晚全场摆烂人数。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["info", "counting", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Final裸考者",
+        "faction": "townsfolk",
+        "ability": "当你被审判时，你可以选择一个玩家，如果其为镇民，则一起挂科。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["trial", "risk", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Special Consideration",
+        "faction": "townsfolk",
+        "ability": "当你存活时，组会时间无法被任何技能缩短。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["protection", "time-control", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "必过锦鲤",
+        "faction": "townsfolk",
+        "ability": "你身旁的两个玩家无法挂科或被审判。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["protection", "neighbor", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "Help Session",
+        "faction": "townsfolk",
+        "ability": "每晚你可以保护两个人不会挂科，但其中一人在次日白天可能无法发言和提名。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["protection", "side-effect", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "组会爆发者",
+        "faction": "townsfolk",
+        "ability": "你可以在每天白天大喊出最多三个推断，如果其中有一个错误，那么当晚你将挂科。如果声音不够大，则被视为发动无效。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["day-ability", "risk", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "内卷之王",
+        "faction": "townsfolk",
+        "ability": "首次挂科或审判对你无效。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["survival", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "组会代言人",
+        "faction": "townsfolk",
+        "ability": "每局白天有一次机会，让白天自闭的人解除自闭状态。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["support", "speech", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "情绪感染者",
+        "faction": "townsfolk",
+        "ability": "仅限一次机会，晚上可以选择一个玩家进入摆烂状态三天三夜。技能发动的同时，拥有一次机会让一个被视为挂科的玩家 PASS。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["debuff", "save", "school"],
+        "min_players": 7,
+        "max_players": 15
+      },
+      {
+        "name": "咖啡狂人",
+        "faction": "townsfolk",
+        "ability": "当你存活时，周围的两个玩家技能将持续性摆烂。如果你在首日被处决，你的阵营将落败。",
+        "effect_notes": "",
+        "first_night_order": "",
+        "other_night_order": "",
+        "tags": ["neighbor", "debuff", "risk", "school"],
+        "min_players": 7,
+        "max_players": 15
+      }
+    ]
+  }

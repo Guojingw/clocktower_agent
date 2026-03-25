@@ -1,0 +1,47 @@
+{
+  "activatable": [
+    {
+      "player": "B",
+      "role": "Moodle爬虫",
+      "reason": "当前夜晚可发动"
+    },
+    {
+      "player": "C",
+      "role": "火警空响",
+      "reason": "当前夜晚可发动"
+    },
+    {
+      "player": "D",
+      "role": "Final吞噬者",
+      "reason": "当前夜晚可发动"
+    },
+    {
+      "player": "E",
+      "role": "社恐分子",
+      "reason": "当前夜晚可发动"
+    },
+    {
+      "player": "G",
+      "role": "情绪感染者",
+      "reason": "当前夜晚可发动"
+    }
+  ],
+  "blocked": [
+    {
+      "player": "A",
+      "role": "选课助手",
+      "reason": "玩家处于摆烂状态"
+    },
+    {
+      "player": "F",
+      "role": "Help Session",
+      "reason": "一次性技能已使用"
+    },
+    {
+      "player": "H",
+      "role": "咖啡狂人",
+      "reason": "玩家已死亡"
+    }
+  ],
+  "passive": []
+}

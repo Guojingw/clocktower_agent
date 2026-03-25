@@ -1,0 +1,41 @@
+{
+  "mode": "runtime",
+  "num_players": 8,
+  "theme": "UNSW 校园悬疑",
+  "difficulty": "中等",
+
+  "phase": "night",
+  "night_number": 2,
+  "day_number": 1,
+
+  "alive_players": ["A", "B", "C", "D", "E", "F", "G"],
+  "dead_players": ["H"],
+
+  "player_roles": {
+    "A": "选课助手",
+    "B": "Moodle爬虫",
+    "C": "火警空响",
+    "D": "Final吞噬者",
+    "E": "社恐分子",
+    "F": "Help Session",
+    "G": "情绪感染者",
+    "H": "咖啡狂人"
+  },
+
+  "drunk_players": ["A"],
+  "used_once_skills": ["Help Session"],
+  "silenced_players": [],
+
+  "nominated_today": ["A", "F"],
+
+  "revealed_or_confirmed_roles": {
+    "H": "咖啡狂人"
+  },
+
+  "day_phase_notes": [
+    "白天讨论时间曾被压缩一次",
+    "当前公开信息较少"
+  ],
+
+  "dm_notes": "目前好人推理困难，坏人尚未明显暴露；保护位已损失一人。"
+}
