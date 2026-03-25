@@ -59,20 +59,22 @@ clocktower_agent/
     ├── prompts.py
     ├── board_builder.py
     └── balance_checker.py
+```
 
 ## 2. 环境要求
 
+```text
 Python 3.10+
 
 macOS / Linux / Windows
 
 Ollama（本地大模型运行）
 
-推荐模型：
-
-qwen2.5:3b
+推荐模型：qwen2.5:3b
+```
 
 ## 3. 安装步骤
+```text
 1️⃣ 安装 Ollama
 brew install ollama
 
@@ -92,13 +94,13 @@ ollama run qwen2.5:3b
 /bye
 4️⃣ Python 环境
 
-如果需要：
+```
 
-pip3 install -r requirements.txt
-📊 数据文件说明
-🎯 data/game_state.json（最重要）
+## 4. 数据文件说明
+```text
+1. data/game_state.json（最重要）
 
-👉 DM 主要操作文件
+2. DM 主要操作文件
 
 包含：
 
@@ -112,7 +114,7 @@ pip3 install -r requirements.txt
 
 哪些技能已使用
 
-🎲 data/roles.json
+3. data/roles.json
 
 角色库定义：
 
@@ -122,13 +124,14 @@ pip3 install -r requirements.txt
 
 适用人数
 
-🧾 自动生成文件
+4.  自动生成文件
 文件	作用
 generated_board.json	当前板子
 recommended_bluffs.json	坏人伪装建议
 skill_status.json	技能可用情况
 dm_advice.json	DM建议
-🧾 game_state.json 示例
+
+5. game_state.json 示例
 {
   "mode": "runtime",
   "num_players": 8,
@@ -141,7 +144,10 @@ dm_advice.json	DM建议
   "drunk_players": ["A"],
   "used_once_skills": ["Help Session"]
 }
-🔄 运行流程
+```
+
+## 5. 运行流程
+```text
 🎬 开局（Setup）
 "mode": "setup"
 
@@ -167,9 +173,9 @@ python3 main.py
 技能判断
 
 DM 建议
-
-💬 CLI 交互
-
+```
+## 6.  CLI 交互
+```text
 启动后进入：
 
 > 
@@ -182,8 +188,8 @@ command	输入自然语言
 save	保存状态
 quit	退出
 
-
-🧠 自然语言指令（核心能力）
+```
+##7. 自然语言指令（核心能力）
 
 输入：
 
@@ -196,7 +202,7 @@ Help Session 已使用
 
 👉 game_state.json
 
-🧪 测试
+##8. 测试
 
 运行：
 
