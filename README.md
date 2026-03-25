@@ -36,6 +36,35 @@ game_state.json（唯一真实状态）
 
 ---
 ---
+### 最小使用流程
+
+如果你只想最快体验一遍，可以直接按下面做：
+```text
+brew install ollama
+ollama serve
+ollama pull qwen2.5:3b
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+python3 main.py
+```
+然后把 data/game_state.json 设成：
+```text
+{
+  "mode": "setup",
+  "num_players": 8
+}
+```
+再次运行：
+```text
+python3 main.py
+```
+就能先看到自动组板结果。
+
+---
+---
 
 ## 1. 项目结构
 
