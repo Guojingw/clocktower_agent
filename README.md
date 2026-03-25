@@ -191,19 +191,18 @@ quit	退出
 ```
 ## 7. 自然语言指令（核心能力）
 ```text
-输入：
+输入例如：
 
 进入第3夜
 A 摆烂
 H 死亡
 Help Session 已使用
-
-系统自动修改： game_state.json
 ```
-## 8. 测试
-```text
-运行：
+系统自动修改： game_state.json
 
+## 8. 测试
+运行：
+```text
 python3 -m unittest discover -s tests -v
 ```
 测试覆盖：
@@ -219,20 +218,24 @@ python3 -m unittest discover -s tests -v
 ## 9. 当前能力
 
 · 自动组板
+
 · 技能发动判断
-·Bluff推荐
+
+· Bluff推荐
+
 · DM辅助
+
 · 指令驱动状态更新
 
 ## 10. 当前限制
 
-部分角色技能仍为手写规则
+· 部分角色技能仍为手写规则
 
-夜晚顺序未实现
+· 夜晚顺序未实现
 
-部分技能未拆分（once / each night）
+· 部分技能未拆分（once / each night）
 
-LLM建议仍可能偏泛
+· LLM建议仍可能偏泛
 
 ## 11. 作者
 
